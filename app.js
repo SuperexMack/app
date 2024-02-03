@@ -28,30 +28,14 @@ socket.on("message" , (mack)=>{
 // console.log("A New User Msg is : " , mack)
 io.emit("message" , {message : mack , senderId : socket.id})
 
-    
 })
-
 
 } )
 
-
 app.get("/app",(req,res)=>{
-
 res.render("index.ejs")
-
-
 })
-
-
-
 
 server.listen(port , ()=>{
-
 console.log(`Server is Created on the port Number ${port}`)
-
-
 })
-
-
-
-
